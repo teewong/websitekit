@@ -23,8 +23,7 @@ export default function SiteHeader() {
           <img src={logo} className="site-header__logo" alt="Constant Electric Inc." />
         </NavLink>
 
-        <nav className="site-nav border-top" aria-label="Primary">
-          
+        <nav className="site-nav" aria-label="Primary">
           {links.map((link) => (
             <NavLink
               key={link.to}

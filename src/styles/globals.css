@@ -72,7 +72,12 @@ select {
 }
 
 .site-header__logo {
-  max-width: 720px;
+  max-height: 3.15rem;
+  width: auto;
+  max-width: 220px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 0.18rem 0.35rem;
 }
 
 .site-header__brand strong,
@@ -756,29 +761,34 @@ select {
 }
 
 .site-header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 20;
   width: 100%;
   padding-top: 0;
-  background: #fff;
-  border-bottom: 1px solid rgba(36, 50, 71, 0.08);
-  backdrop-filter: none;
+  background: rgba(7, 11, 18, 0.94);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .site-header__inner {
   width: min(calc(100% - 2rem), var(--container));
   margin: 0 auto;
-  padding: 1.15rem 1.5rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   background: transparent;
   border: 0;
   border-radius: 0;
   box-shadow: none;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-header__brand {
-  flex-direction: column;
-  gap: 0.55rem;
-  text-align: center;
+  flex-direction: row;
+  gap: 0.75rem;
+  align-items: center;
 }
 
 .site-header__swoosh {
@@ -820,32 +830,41 @@ select {
 }
 
 .site-nav {
-  gap: 0.55rem;
+  gap: 0.35rem;
 }
 
 .site-nav__link {
-  padding: 0.65rem 0.95rem;
+  padding: 0.65rem 0.85rem;
   font-weight: 600;
 }
 
 .site-nav__link--active,
 .site-nav__link:hover {
-  background: rgba(23, 117, 63, 0.08);
-  color: var(--color-accent-dark);
+  background: rgba(200, 136, 44, 0.12);
+  color: var(--color-accent);
+}
+
+.site-nav__link {
+  color: rgba(237, 233, 223, 0.75);
+  transition: color 0.18s, background 0.18s;
 }
 
 .button {
   background: var(--color-accent);
   border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(200, 136, 44, 0.2);
+  transition: background 0.18s, border-color 0.18s, color 0.18s, transform 0.18s;
 }
 
 .button:hover {
   background: var(--color-accent-dark);
+  transform: translateY(-1px);
 }
 
 .button--ghost {
-  background: #fff;
-  color: #16442b;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--color-text);
+  border-color: rgba(255, 255, 255, 0.14);
 }
 
 .electric-home {
@@ -854,7 +873,7 @@ select {
 
 .electric-hero {
   position: relative;
-  min-height: 44rem;
+  min-height: 45rem;
   overflow: hidden;
   background: #1e2631;
 }
@@ -866,14 +885,15 @@ select {
   height: 100%;
   object-fit: cover;
   object-position: center 23%;
-  filter: saturate(0.88) brightness(0.7);
+  filter: saturate(0.86) brightness(0.78);
 }
 
 .electric-hero__overlay {
   position: absolute;
   inset: 0;
-  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.56) 56%, rgba(0, 0, 0, 0.72) 100%); */
-  background: linear-gradient(180deg, rgba(255,255,255, 0.14) 0%, rgba(255,255,255, 0.56) 56%, rgba(255,255,255, 0.72) 100%);
+  background:
+    linear-gradient(90deg, rgba(7, 11, 18, 0.88) 0%, rgba(7, 11, 18, 0.58) 42%, rgba(7, 11, 18, 0.16) 100%),
+    linear-gradient(180deg, rgba(7, 11, 18, 0.12) 0%, rgba(7, 11, 18, 0.74) 100%);
 }
 
 .electric-hero__content,
@@ -886,27 +906,28 @@ select {
   position: relative;
   z-index: 1;
   display: flex;
-  min-height: 44rem;
+  min-height: 45rem;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 1.5rem 2rem;
+  padding: 0 1.5rem 3rem;
   color: #fff;
 }
 
 .electric-hero__content h1 {
-  max-width: 52rem;
+  max-width: 50rem;
   margin: 0;
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 5vw, 5rem);
-  line-height: 0.96;
+  line-height: 0.98;
   text-wrap: balance;
 }
 
 .electric-hero__intro {
-  max-width: 52rem;
+  max-width: 44rem;
   margin: 1rem 0 0;
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
-  line-height: 1.35;
+  color: rgba(237, 233, 223, 0.86);
+  font-size: clamp(1.14rem, 1.7vw, 1.45rem);
+  line-height: 1.45;
 }
 
 .electric-hero__actions {
@@ -914,7 +935,10 @@ select {
 }
 
 .electric-hero__secondary {
-  color: var(--color-accent-dark);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
 }
 
 .electric-hero__trust {
@@ -937,15 +961,17 @@ select {
 }
 
 .electric-section {
-  padding: 4.5rem 0;
+  padding: 5rem 0;
 }
 
 .electric-section--soft {
-  background: #f4f5f4;
+  background: var(--color-surface-tint);
 }
 
 .electric-section--rates {
-  background: #eefaf0;
+  background:
+    linear-gradient(180deg, rgba(200, 136, 44, 0.08), rgba(200, 136, 44, 0)),
+    #11141d;
 }
 
 .electric-stack {
@@ -959,7 +985,8 @@ select {
 
 .electric-heading h2 {
   margin: 0;
-  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  font-size: clamp(2.25rem, 4vw, 3.65rem);
+  line-height: 1;
 }
 
 .electric-heading p {
@@ -988,9 +1015,9 @@ select {
 
 .electric-card,
 .electric-service-card {
-  border: 1px solid rgba(36, 50, 71, 0.1);
-  border-radius: 18px;
-  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: var(--color-surface);
   box-shadow: var(--shadow-soft);
 }
 
@@ -1020,7 +1047,8 @@ select {
   height: 3.5rem;
   margin: 0 auto 1rem;
   border-radius: 999px;
-  background: #eaf7ee;
+  background: rgba(200, 136, 44, 0.1);
+  border: 1px solid rgba(200, 136, 44, 0.2);
   color: var(--color-accent);
   font-size: 1.45rem;
   font-weight: 700;
@@ -1049,15 +1077,38 @@ select {
 .electric-service-list {
   display: grid;
   gap: 1.3rem;
-  max-width: 42rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 58rem;
   margin: 0 auto;
 }
 
 .electric-service-card {
-  padding: 1.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.electric-service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--color-accent);
+  opacity: 0.84;
+}
+
+.electric-service-card a {
+  display: grid;
+  min-height: 100%;
+  gap: 0.7rem;
+  padding: 1.45rem 1.55rem 1.5rem;
+}
+
+.electric-service-card:hover {
+  border-color: rgba(200, 136, 44, 0.38);
 }
 
 .electric-service-card p {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -1066,7 +1117,7 @@ select {
   grid-template-columns: 300px minmax(0, 1fr);
   gap: 2rem;
   align-items: start;
-  max-width: 68rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
@@ -1109,9 +1160,13 @@ select {
   height: 3rem;
   margin: 0 auto 1rem;
   border-radius: 999px;
-  background: #dff6e6;
-  color: var(--color-accent-dark);
+  background: rgba(200, 136, 44, 0.1);
+  border: 1px solid rgba(200, 136, 44, 0.22);
+  color: var(--color-accent);
   font-weight: 800;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
 }
 
 .electric-rates {
@@ -1144,8 +1199,11 @@ select {
 }
 
 .electric-contact-band {
-  padding: 4.5rem 0;
-  background: #276d35;
+  padding: 5rem 0;
+  background:
+    linear-gradient(180deg, rgba(12, 16, 24, 0.2), rgba(5, 8, 14, 0.98)),
+    #070b12;
+  border-top: 1px solid rgba(200, 136, 44, 0.18);
 }
 
 .electric-contact-grid {
@@ -1155,9 +1213,9 @@ select {
 }
 
 .electric-card--dark {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.12);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(200, 136, 44, 0.14);
+  color: var(--color-text);
   box-shadow: none;
 }
 
@@ -1226,6 +1284,7 @@ select {
 @media (max-width: 960px) {
   .site-header__inner {
     padding-inline: 1rem;
+    align-items: center;
   }
 
   .site-nav {
@@ -1237,6 +1296,7 @@ select {
   .electric-steps,
   .electric-rates,
   .electric-testimonials,
+  .electric-service-list,
   .electric-contact-grid,
   .site-footer__grid,
   .electric-card--about {
@@ -1260,4 +1320,324 @@ select {
 .border-top {
   border-top: 1px solid var(--color-border);
   padding-top: 1.5rem;
+}
+
+/* ═══ Dark Theme Enhancements ═══ */
+
+/* Display font on all electric section headings */
+.electric-heading h2,
+.electric-card h2,
+.electric-card h3,
+.electric-service-card h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.electric-card h2,
+.electric-card h3,
+.electric-service-card h3 {
+  color: var(--color-text);
+}
+
+/* Hero image: less brightness reduction for a more dramatic photo */
+.electric-hero__image {
+  filter: saturate(0.86) brightness(0.78);
+}
+
+/* Hero eyebrow badge */
+.electric-hero__eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
+  margin-bottom: 1.1rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(200, 136, 44, 0.15);
+  border: 1px solid rgba(200, 136, 44, 0.3);
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Hero heading size increase for Playfair impact */
+.electric-hero__content h1 {
+  font-size: clamp(3rem, 5.5vw, 5.45rem);
+  line-height: 1;
+}
+
+/* Trust signals with subtle copper separators */
+.electric-hero__trust {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  margin-top: 1.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(237, 233, 223, 0.72);
+}
+
+.electric-hero__trust span {
+  padding: 0 0.9rem;
+}
+
+.electric-hero__trust span:first-child {
+  padding-left: 0;
+}
+
+.electric-hero__trust span + span {
+  border-left: 1px solid rgba(200, 136, 44, 0.35);
+}
+
+.electric-hero__trust span + span::before {
+  display: none;
+}
+
+/* Section eyebrow labels */
+.electric-eyebrow {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* Testimonial quote marks */
+.electric-testimonial {
+  position: relative;
+}
+
+.electric-testimonial p {
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: rgba(237, 233, 223, 0.82);
+}
+
+.electric-testimonial p::before {
+  content: "\201C";
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  line-height: 0.6;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+}
+
+.electric-testimonial strong {
+  display: block;
+  margin-top: 0.85rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Rate prices with display font */
+.electric-rate-card strong {
+  display: block;
+  margin: 0.85rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 3.5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: -0.02em;
+}
+
+/* About card - copper highlight text */
+.electric-about__highlight {
+  color: var(--color-accent) !important;
+  font-weight: 600;
+}
+
+/* About image warmer filter */
+.electric-about__image {
+  filter: saturate(0.85);
+}
+
+/* Contact list labels in copper */
+.electric-contact-list span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent) !important;
+}
+
+/* Footer: brand name uses display font */
+.site-footer__grid h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+/* Mobile: fix hero eyebrow sizing */
+@media (max-width: 960px) {
+  .electric-hero__trust span {
+    padding: 0 0.6rem;
+  }
+  .electric-hero__trust span:first-child {
+    padding-left: 0;
+  }
+}
+
+.electric-hero__phone {
+  width: fit-content;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-decoration: underline;
+  text-decoration-color: rgba(200, 136, 44, 0.75);
+  text-underline-offset: 0.22em;
+}
+
+.electric-paths,
+.electric-area-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.electric-paths {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.electric-path-card {
+  position: relative;
+  display: grid;
+  min-height: 15rem;
+  align-content: end;
+  overflow: hidden;
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(200, 136, 44, 0.16), rgba(22, 29, 43, 0.84)),
+    var(--color-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.electric-path-card::after {
+  content: "";
+  position: absolute;
+  right: 1.75rem;
+  bottom: 1.35rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-top: 2px solid var(--color-accent);
+  border-right: 2px solid var(--color-accent);
+  transform: rotate(45deg);
+  opacity: 0.75;
+}
+
+.electric-path-card span {
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1;
+}
+
+.electric-path-card p {
+  max-width: 27rem;
+  margin: 0.8rem 3rem 0 0;
+  color: rgba(237, 233, 223, 0.78);
+}
+
+.electric-stars {
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+}
+
+.electric-area-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.electric-area-grid span {
+  display: grid;
+  min-height: 4rem;
+  place-items: center;
+  padding: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 700;
+  text-align: center;
+}
+
+.electric-contact-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 0.8fr);
+  max-width: 64rem;
+}
+
+.electric-quote-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(200, 136, 44, 0.16);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.electric-quote-form label {
+  display: grid;
+  gap: 0.4rem;
+  color: rgba(237, 233, 223, 0.82);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.electric-quote-form input,
+.electric-quote-form select,
+.electric-quote-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: rgba(7, 11, 18, 0.74);
+  color: var(--color-text);
+}
+
+.electric-quote-form textarea {
+  resize: vertical;
+}
+
+.electric-quote-form__message,
+.electric-quote-form .button {
+  grid-column: 1 / -1;
+}
+
+.electric-contact-card {
+  display: grid;
+  align-content: start;
+  gap: 1.25rem;
+}
+
+@media (max-width: 960px) {
+  .electric-paths,
+  .electric-area-grid,
+  .electric-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .electric-contact-grid {
+    max-width: 42rem;
+  }
+
+  .electric-quote-form {
+    grid-template-columns: 1fr;
+  }
 }

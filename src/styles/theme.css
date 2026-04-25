@@ -1,18 +1,18 @@
 :root {
-  --color-bg: #ffffff;
-  --color-surface: #ffffff;
-  --color-surface-tint: #f4f6f4;
-  --color-text: #243247;
-  --color-muted: #526076;
-  --color-border: rgba(36, 50, 71, 0.12);
-  --color-accent: #17753f;
-  --color-accent-dark: #0d5a30;
-  --color-warm: #e9f6ed;
-  --shadow-soft: 0 10px 28px rgba(36, 50, 71, 0.08);
-  --radius-xl: 28px;
-  --radius-lg: 20px;
-  --radius-md: 14px;
+  --color-bg: #0c1018;
+  --color-surface: #161d2b;
+  --color-surface-tint: #1b2234;
+  --color-text: #ede9df;
+  --color-muted: #8a96ae;
+  --color-border: rgba(255, 255, 255, 0.07);
+  --color-accent: #c8882c;
+  --color-accent-dark: #a47020;
+  --color-warm: #1e1a12;
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.48);
+  --radius-xl: 20px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
   --container: 1120px;
-  --font-body: "Avenir Next", "Segoe UI", sans-serif;
-  --font-display: "Georgia", "Times New Roman", serif;
+  --font-body: "Jost", "Segoe UI", sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
 }
