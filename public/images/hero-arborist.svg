@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Arborist working beside a house</title>
+  <desc id="desc">Illustrated arborist scene with trees, a ladder, and a home exterior.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8e8ef"/>
+      <stop offset="100%" stop-color="#f6efe1"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#567c4e"/>
+      <stop offset="100%" stop-color="#7fa770"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <rect y="610" width="1200" height="290" fill="url(#ground)"/>
+  <rect x="735" y="320" width="285" height="230" rx="8" fill="#efe2cb"/>
+  <polygon points="710,350 880,230 1045,350" fill="#835f43"/>
+  <rect x="830" y="400" width="62" height="150" fill="#89654a"/>
+  <rect x="932" y="382" width="52" height="68" fill="#a9d4df"/>
+  <rect x="770" y="382" width="52" height="68" fill="#a9d4df"/>
+  <rect x="144" y="310" width="46" height="320" fill="#6d4a2d"/>
+  <circle cx="170" cy="238" r="110" fill="#355f37"/>
+  <circle cx="102" cy="292" r="88" fill="#427743"/>
+  <circle cx="235" cy="295" r="80" fill="#2f5a30"/>
+  <rect x="940" y="210" width="34" height="420" fill="#6d4a2d"/>
+  <circle cx="960" cy="170" r="86" fill="#315b34"/>
+  <circle cx="1034" cy="230" r="68" fill="#447747"/>
+  <circle cx="888" cy="245" r="73" fill="#3d6f41"/>
+  <rect x="513" y="378" width="12" height="238" fill="#b59b7b"/>
+  <rect x="565" y="378" width="12" height="238" fill="#b59b7b"/>
+  <g stroke="#b59b7b" stroke-width="9">
+    <line x1="519" y1="406" x2="571" y2="406"/>
+    <line x1="519" y1="454" x2="571" y2="454"/>
+    <line x1="519" y1="502" x2="571" y2="502"/>
+    <line x1="519" y1="550" x2="571" y2="550"/>
+  </g>
+  <circle cx="460" cy="505" r="50" fill="#e0a66d"/>
+  <rect x="440" y="552" width="42" height="94" rx="16" fill="#234d35"/>
+  <rect x="416" y="580" width="25" height="88" rx="10" fill="#234d35"/>
+  <rect x="483" y="580" width="25" height="88" rx="10" fill="#234d35"/>
+  <path d="M445 570 L402 524 L416 510 L459 553 Z" fill="#234d35"/>
+  <path d="M400 522 L355 446 L372 437 L418 510 Z" fill="#cfd7d0"/>
+  <rect x="202" y="664" width="278" height="86" rx="18" fill="#eadcc1"/>
+  <text x="234" y="718" font-family="Arial, sans-serif" font-size="36" fill="#1d4029">Island Peak Arborist</text>
+</svg>
