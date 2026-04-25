@@ -1560,6 +1560,134 @@ select {
   letter-spacing: 0.12em;
 }
 
+.electric-area-map {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.95fr) minmax(0, 1.05fr);
+  gap: 1.5rem;
+  align-items: stretch;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(7, 11, 18, 0.92), rgba(22, 29, 43, 0.9)),
+    radial-gradient(circle at 28% 22%, rgba(200, 136, 44, 0.2), transparent 32%);
+  box-shadow: var(--shadow-soft);
+}
+
+.electric-area-map__visual {
+  position: relative;
+  min-height: 30rem;
+  overflow: hidden;
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(33, 71, 98, 0.5), rgba(13, 28, 44, 0.95)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 32px);
+}
+
+.electric-area-map__visual::before,
+.electric-area-map__visual::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.electric-area-map__visual::before {
+  width: 18rem;
+  height: 18rem;
+  left: -7rem;
+  top: -5rem;
+}
+
+.electric-area-map__visual::after {
+  width: 14rem;
+  height: 14rem;
+  right: -6rem;
+  bottom: -5rem;
+}
+
+.electric-area-map__island {
+  position: absolute;
+  inset: 2rem 20% 2rem 20%;
+  border-radius: 48% 44% 54% 42%;
+  background:
+    linear-gradient(150deg, rgba(200, 136, 44, 0.5), rgba(151, 180, 133, 0.28)),
+    #1f2e2a;
+  clip-path: polygon(62% 0, 74% 8%, 80% 21%, 76% 35%, 86% 48%, 80% 64%, 68% 76%, 60% 94%, 45% 100%, 34% 88%, 28% 72%, 16% 60%, 20% 42%, 10% 30%, 22% 18%, 34% 10%, 46% 4%);
+  box-shadow: 0 0 0 2px rgba(200, 136, 44, 0.28), 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.electric-map-pin {
+  position: absolute;
+  width: max-content;
+  padding: 0.38rem 0.58rem;
+  border: 1px solid rgba(200, 136, 44, 0.35);
+  border-radius: 999px;
+  background: rgba(7, 11, 18, 0.82);
+  color: var(--color-text);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.electric-map-pin::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.36rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+  transform: translateX(-50%);
+}
+
+.electric-map-pin--campbell {
+  left: 65%;
+  top: 16%;
+}
+
+.electric-map-pin--comox {
+  left: 58%;
+  top: 34%;
+}
+
+.electric-map-pin--parksville {
+  left: 47%;
+  top: 57%;
+}
+
+.electric-map-pin--nanaimo {
+  left: 38%;
+  top: 75%;
+}
+
+.electric-area-map__content {
+  display: grid;
+  align-content: center;
+  gap: 1.2rem;
+  padding: 1rem;
+}
+
+.electric-area-map__content h3 {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  line-height: 1.02;
+}
+
+.electric-area-map__content p {
+  max-width: 35rem;
+  margin: 0;
+  color: var(--color-muted);
+}
+
 .electric-area-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1628,6 +1756,7 @@ select {
 
 @media (max-width: 960px) {
   .electric-paths,
+  .electric-area-map,
   .electric-area-grid,
   .electric-contact-grid {
     grid-template-columns: 1fr;
@@ -1639,5 +1768,9 @@ select {
 
   .electric-quote-form {
     grid-template-columns: 1fr;
+  }
+
+  .electric-area-map__visual {
+    min-height: 24rem;
   }
 }

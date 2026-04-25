@@ -219,10 +219,27 @@ export default function HomePage() {
               <h2>Parksville, Nanaimo, Comox, and nearby communities.</h2>
               <p>Clear local coverage across the Parksville-Nanaimo-Comox corridor.</p>
             </div>
-            <div className="electric-area-grid">
-              {siteData.serviceAreas.map((area) => (
-                <span key={area}>{area}</span>
-              ))}
+            <div className="electric-area-map">
+              <div className="electric-area-map__visual" aria-hidden="true">
+                <div className="electric-area-map__island">
+                  <span className="electric-map-pin electric-map-pin--campbell">Campbell River</span>
+                  <span className="electric-map-pin electric-map-pin--comox">Comox</span>
+                  <span className="electric-map-pin electric-map-pin--parksville">Parksville</span>
+                  <span className="electric-map-pin electric-map-pin--nanaimo">Nanaimo</span>
+                </div>
+              </div>
+              <div className="electric-area-map__content">
+                <h3>Mid-Island coverage for planned and urgent electrical work.</h3>
+                <p>
+                  Based near Parksville and serving homeowners, contractors, and small businesses across the island
+                  corridor.
+                </p>
+                <div className="electric-area-grid">
+                  {siteData.serviceAreas.map((area) => (
+                    <span key={area}>{area}</span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
