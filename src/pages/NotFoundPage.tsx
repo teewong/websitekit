@@ -6,7 +6,7 @@ import SectionTitle from '../components/ui/SectionTitle'
 export default function NotFoundPage() {
   return (
     <>
-      <Seo title="Page Not Found" description="The requested page could not be found." path="/404" />
+      <Seo title="Page Not Found" description="The requested page could not be found." path="/404" noIndex />
       <Section>
         <SectionTitle
           eyebrow="404"

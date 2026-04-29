@@ -8,7 +8,12 @@ const links = [
   { to: '/contact', label: 'Contact' },
 ]
 
-export default function SiteHeader() {
+type SiteHeaderProps = {
+  themeMode: 'dark' | 'light'
+  onToggleTheme: () => void
+}
+
+export default function SiteHeader({ themeMode, onToggleTheme }: SiteHeaderProps) {
   return (
     <header className="site-header">
       <div className="site-header__inner">
@@ -35,9 +40,23 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <a className="button button--small" href={siteData.primaryCtaHref}>
-          {siteData.primaryCtaLabel}
-        </a>
+        <div className="site-header__actions">
+          <button
+            className="theme-toggle"
+            type="button"
+            aria-label={`Switch to ${themeMode === 'dark' ? 'light' : 'dark'} theme`}
+            aria-pressed={themeMode === 'light'}
+            onClick={onToggleTheme}
+          >
+            <span className="theme-toggle__track" aria-hidden="true">
+              <span className="theme-toggle__thumb" />
+            </span>
+            <span className="theme-toggle__label">{themeMode === 'dark' ? 'Dark' : 'Light'}</span>
+          </button>
+          <a className="button button--small" href={siteData.primaryCtaHref}>
+            {siteData.primaryCtaLabel}
+          </a>
+        </div>
       </div>
     </header>
   )

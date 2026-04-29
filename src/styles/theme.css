@@ -5,8 +5,9 @@
   --color-text: #ede9df;
   --color-muted: #8a96ae;
   --color-border: rgba(255, 255, 255, 0.07);
-  --color-accent: #c8882c;
-  --color-accent-dark: #a47020;
+  /* --color-accent: #c8882c; */
+  --color-accent: dodgerblue;
+  --color-accent-dark: greenyellow;
   --color-warm: #1e1a12;
   --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.48);
   --radius-xl: 20px;

@@ -40,6 +40,22 @@ export default function HomePage() {
       />
       <LocalBusinessJsonLd />
       <section className="electric-home">
+        <div className="electric-service-marquee" aria-label="Electrical services offered">
+          <div className="electric-service-marquee__track">
+            {[...services, ...services].map((service, index) => (
+              <a
+                key={`${service.slug}-${index}`}
+                className="electric-service-marquee__item"
+                href={`/services/${service.slug}`}
+                aria-hidden={index >= services.length ? 'true' : undefined}
+                tabIndex={index >= services.length ? -1 : undefined}
+              >
+                {service.title}
+              </a>
+            ))}
+          </div>
+        </div>
+
         <section className="electric-hero">
           <img className="electric-hero__image" src={siteData.heroImage} alt="" aria-hidden="true" />
           <div className="electric-hero__overlay" />

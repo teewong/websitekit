@@ -10,6 +10,7 @@ export default function ContactSuccessPage() {
         title={`Message Sent | ${siteData.businessName}`}
         description="Confirmation page for the contact form."
         path="/contact-success"
+        noIndex
       />
       <Section tinted>
         <div className="success-panel">
