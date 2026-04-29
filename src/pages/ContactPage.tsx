@@ -8,7 +8,7 @@ export default function ContactPage() {
     <>
       <Seo
         title={`Contact | ${siteData.businessName}`}
-        description={`Contact ${siteData.businessName} for quotes, questions, or service requests.`}
+        description={`Contact ${siteData.businessName} for custom cedar saunas, hot tubs, sleeping barrels, yurts, and woodcraft quotes.`}
         path="/contact"
       />
       <Section tinted>
@@ -16,22 +16,22 @@ export default function ContactPage() {
           <div className="consultation-copy">
             <SectionTitle
               eyebrow="Contact"
-              title="Request a professional quote"
-              intro="Call, email, or send a message with your project details. You&apos;ll get a clear response and a practical next step."
+              title="Start your custom build."
+              intro="Tell us what you want to build, where it is going, and what would make it one of a kind."
             />
             <div className="consultation-steps">
-              <h3>What to expect:</h3>
+              <h3>What to include:</h3>
               <ol className="number-list">
-                <li>Review of the electrical work you need completed</li>
-                <li>Transparent pricing before work begins</li>
-                <li>Scheduling that fits the project scope</li>
-                <li>Professional execution and clean finish</li>
+                <li>The product you are interested in</li>
+                <li>Your location and delivery access</li>
+                <li>Preferred size, heat source, and timeline</li>
+                <li>Any personalization, view, or site-specific detail</li>
               </ol>
             </div>
             <div className="consultation-footnote">
-              Serving homeowners and contractors across Mid-Vancouver Island.
+              Workshop: 1401 Springhill Rd, Parksville, BC V9P 2B8.
               <br />
-              Licensed, insured, and committed to excellent workmanship.
+              Open Monday to Saturday, 9:00 AM to 5:00 PM.
             </div>
           </div>
           <form className="contact-form contact-form--editorial" method="post" action="/contact-success" data-netlify="true">
@@ -59,33 +59,33 @@ export default function ContactPage() {
               <input type="email" name="email" required />
             </label>
             <label>
-              Service Needed
+              Product
               <select name="serviceType" defaultValue="">
                 <option value="" disabled>
-                  Select a service
+                  Select a product
                 </option>
-                <option>Custom Home Wiring</option>
-                <option>Renovation / Upgrade</option>
-                <option>EV Charger Installation</option>
-                <option>Panel Upgrade</option>
-                <option>Solar / Backup Power</option>
-                <option>Other</option>
+                <option>Barrel sauna</option>
+                <option>Cedar hot tub</option>
+                <option>Sleeping barrel</option>
+                <option>Cedar yurt</option>
+                <option>Custom woodcraft</option>
+                <option>Something else</option>
               </select>
             </label>
             <label>
-              Additional Information
+              Project Details
               <textarea
                 name="message"
                 rows={6}
                 required
-                placeholder="Tell us about the project, location, timeline, or any concerns you want reviewed..."
+                placeholder="Tell us about the site, dimensions, heat source, delivery location, view, timeline, or custom detail you have in mind..."
               />
             </label>
             <button className="button" type="submit">
-              Request Quote
+              Send to One of a Kind
             </button>
             <p className="contact-form__fineprint">
-              By submitting this form, you consent to be contacted regarding your electrical project. We respect your
+              By submitting this form, you consent to be contacted regarding your custom woodcraft project. We respect your
               privacy and will never share your information.
             </p>
           </form>

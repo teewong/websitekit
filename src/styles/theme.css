@@ -1,18 +1,19 @@
 :root {
-  --color-bg: #ffffff;
-  --color-surface: #ffffff;
-  --color-surface-tint: #f4f6f4;
-  --color-text: #243247;
-  --color-muted: #526076;
-  --color-border: rgba(36, 50, 71, 0.12);
-  --color-accent: #17753f;
-  --color-accent-dark: #0d5a30;
-  --color-warm: #e9f6ed;
-  --shadow-soft: 0 10px 28px rgba(36, 50, 71, 0.08);
-  --radius-xl: 28px;
-  --radius-lg: 20px;
-  --radius-md: 14px;
-  --container: 1120px;
-  --font-body: "Avenir Next", "Segoe UI", sans-serif;
-  --font-display: "Georgia", "Times New Roman", serif;
+  --color-bg: #f5ede0;
+  --color-surface: #fdf7ee;
+  --color-surface-tint: #ede1cf;
+  --color-text: #231510;
+  --color-muted: #7a5d4e;
+  --color-border: rgba(80, 48, 30, 0.14);
+  --color-accent: #b96524;
+  --color-accent-dark: #5a2f18;
+  --color-warm: #d99851;
+  --shadow-soft: 0 20px 56px rgba(57, 31, 18, 0.14);
+  --shadow-card: 0 4px 18px rgba(57, 31, 18, 0.08);
+  --radius-xl: 24px;
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --container: 1180px;
+  --font-body: 'DM Sans', 'Segoe UI', sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
 }

@@ -4,7 +4,12 @@ export type GalleryItem = {
 }
 
 export const galleryItems: GalleryItem[] = [
-  { src: '/images/constant-electric-hero-reference.png', alt: 'Constant Electric service truck parked at a residential project' },
-  { src: '/images/constant-electric-hero-reference.png', alt: 'Electrician arriving on site for a residential service call' },
-  { src: '/images/constant-electric-hero-reference.png', alt: 'Branded service vehicle outside a custom home project' },
+  { src: '/images/ooak/scenic-sauna.jpg', alt: 'Scenic View barrel sauna installed near the coast' },
+  { src: '/images/ooak/sauna-inside.jpg', alt: 'Warm cedar interior inside a barrel sauna' },
+  { src: '/images/ooak/snow-sauna.jpg', alt: 'Cedar barrel sauna built for winter use' },
+  { src: '/images/ooak/hot-tub.jpg', alt: 'Round cedar hot tub with natural exterior finish' },
+  { src: '/images/ooak/sleeping-barrel.jpg', alt: 'Sleeping barrel interior insert with cedar construction' },
+  { src: '/images/ooak/north-van-sauna.jpg', alt: 'Barrel sauna installed on a residential deck' },
+  { src: '/images/ooak/team.jpg', alt: 'One of a Kind workshop team with custom cedar builds' },
+  { src: '/images/ooak/hero-workshop.jpg', alt: 'Barrel sauna under construction in the workshop' },
 ]

@@ -1,0 +1,111 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "One of a Kind Creative Woodcrafting" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "One of a Kind Creative Woodcrafting" [ref=e7]
+      - navigation "Primary" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about
+        - link "Products" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Gallery" [ref=e12] [cursor=pointer]:
+          - /url: /gallery
+        - link "Contact" [ref=e13] [cursor=pointer]:
+          - /url: /contact
+      - link "Request a Quote" [ref=e14] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e15]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: Contact
+          - heading "Start your custom build." [level=2] [ref=e22]
+          - paragraph [ref=e23]: Tell us what you want to build, where it is going, and what would make it one of a kind.
+        - generic [ref=e24]:
+          - heading "What to include:" [level=3] [ref=e25]
+          - list [ref=e26]:
+            - listitem [ref=e27]: The product you are interested in
+            - listitem [ref=e28]: Your location and delivery access
+            - listitem [ref=e29]: Preferred size, heat source, and timeline
+            - listitem [ref=e30]: Any personalization, view, or site-specific detail
+        - generic [ref=e31]:
+          - text: "Workshop: 1401 Springhill Rd, Parksville, BC V9P 2B8."
+          - text: Open Monday to Saturday, 9:00 AM to 5:00 PM.
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - text: First Name *
+            - textbox "First Name *" [ref=e35]
+          - generic [ref=e36]:
+            - text: Last Name *
+            - textbox "Last Name *" [ref=e37]
+          - generic [ref=e38]:
+            - text: Phone *
+            - textbox "Phone *" [ref=e39]
+          - generic [ref=e40]:
+            - text: ZIP / Postal Code *
+            - textbox "ZIP / Postal Code *" [ref=e41]
+        - generic [ref=e42]:
+          - text: Email *
+          - textbox "Email *" [ref=e43]
+        - generic [ref=e44]:
+          - text: Product
+          - combobox "Product" [ref=e45]:
+            - option "Select a product" [disabled] [selected]
+            - option "Barrel sauna"
+            - option "Cedar hot tub"
+            - option "Sleeping barrel"
+            - option "Cedar yurt"
+            - option "Custom woodcraft"
+            - option "Something else"
+        - generic [ref=e46]:
+          - text: Project Details
+          - textbox "Project Details" [ref=e47]:
+            - /placeholder: Tell us about the site, dimensions, heat source, delivery location, view, timeline, or custom detail you have in mind...
+        - button "Send to One of a Kind" [ref=e48]
+        - paragraph [ref=e49]: By submitting this form, you consent to be contacted regarding your custom woodcraft project. We respect your privacy and will never share your information.
+  - contentinfo [ref=e50]:
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Workshop" [level=2] [ref=e54]
+          - list [ref=e55]:
+            - listitem [ref=e56]:
+              - 'link "Phone: 250-415-9628" [ref=e57] [cursor=pointer]':
+                - /url: tel:+12504159628
+            - listitem [ref=e58]:
+              - 'link "Email: info@oneofakindcw.com" [ref=e59] [cursor=pointer]':
+                - /url: mailto:info@oneofakindcw.com
+            - listitem [ref=e60]: 1401 Springhill Rd, Parksville, BC
+        - generic [ref=e61]:
+          - heading "Built For" [level=2] [ref=e62]
+          - list [ref=e63]:
+            - listitem [ref=e64]: Vancouver Island
+            - listitem [ref=e65]: British Columbia
+            - listitem [ref=e66]: Canada
+            - listitem [ref=e67]: United States
+            - listitem [ref=e68]: Worldwide shipping
+        - generic [ref=e69]:
+          - heading "Quick Links" [level=2] [ref=e70]
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "About" [ref=e73] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e74]:
+              - link "Products" [ref=e75] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e76]:
+              - link "Gallery" [ref=e77] [cursor=pointer]:
+                - /url: /gallery
+            - listitem [ref=e78]:
+              - link "Contact" [ref=e79] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e80]:
+              - link "Privacy" [ref=e81] [cursor=pointer]:
+                - /url: /privacy
+      - generic [ref=e82]:
+        - paragraph [ref=e83]: © 2026 One of a Kind Creative Woodworking
+        - paragraph [ref=e84]: Custom cedar wellness structures and one-of-a-kind woodcraft from a Vancouver Island workshop.

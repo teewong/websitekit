@@ -6,18 +6,18 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    name: 'Sarah',
-    location: 'Parksville',
-    quote: 'Dan was professional, on time, and did excellent work upgrading our panel. Highly recommend!',
+    name: 'Chris & Laura Degroot',
+    location: 'Homeowners',
+    quote: 'We picked up our barrel sauna and assembled it with the supplied instructions. It came together beautifully and is used almost daily.',
   },
   {
-    name: 'Michael',
-    location: 'Qualicum Beach',
-    quote: 'Quick response, clear pricing, and quality work. Dan installed our EV charger and it works perfectly.',
+    name: 'J.J. Belanger',
+    location: 'Crystal Cove Beach Resort',
+    quote: 'Our project required three pre-built barrel saunas delivered on site. The return was immediate and the saunas quickly paid for themselves.',
   },
   {
-    name: 'Jennifer',
-    location: 'Nanaimo',
-    quote: "Respectful of our home, cleaned up after himself, and the work was done right. We'll call Dan for all our electrical needs.",
+    name: 'Geoff Hunt & Michelle Lee',
+    location: 'Homeowners',
+    quote: 'We considered buying a kit online and are so glad we did not. Dave explained the quality, craftsmanship, and durability differences clearly.',
   },
 ]

@@ -1,0 +1,133 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "One of a Kind Creative Woodcrafting" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "One of a Kind Creative Woodcrafting" [ref=e7]
+      - navigation "Primary" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about
+        - link "Products" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Gallery" [ref=e12] [cursor=pointer]:
+          - /url: /gallery
+        - link "Contact" [ref=e13] [cursor=pointer]:
+          - /url: /contact
+      - link "Request a Quote" [ref=e14] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e15]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: Products
+        - heading "Custom cedar builds, not catalogue compromises." [level=2] [ref=e20]
+        - paragraph [ref=e21]: Choose a proven One of a Kind product, then shape the dimensions, heat source, site fit, and details around your property.
+      - generic [ref=e22]:
+        - article [ref=e23]:
+          - img "Scenic View Barrel Saunas" [ref=e24]
+          - paragraph [ref=e25]: Signature product
+          - heading "Scenic View Barrel Saunas" [level=3] [ref=e26]
+          - paragraph [ref=e27]: "The Scenic View barrel sauna is built for the West Coast lifestyle: warm cedar, efficient rounded form, and a durable acrylic bubble back wall that opens the sauna to forest, ocean, mountain, or backyard views."
+          - list [ref=e28]:
+            - listitem [ref=e29]: Wood-fired or electric heat options
+            - listitem [ref=e30]: Clear or smoked acrylic view wall
+            - listitem [ref=e31]: Custom lengths, seating layouts, and change rooms
+          - link "View details" [ref=e32] [cursor=pointer]:
+            - /url: /services/barrel-saunas
+        - article [ref=e33]:
+          - img "Cedar Hot Tubs" [ref=e34]
+          - paragraph [ref=e35]: Cedar soaking
+          - heading "Cedar Hot Tubs" [level=3] [ref=e36]
+          - paragraph [ref=e37]: A cedar hot tub brings the ritual back to soaking. One of a Kind builds tubs with natural cedar presence, practical heating choices, and a finished look that belongs beside cabins, retreats, decks, and ocean-view homes.
+          - list [ref=e38]:
+            - listitem [ref=e39]: Wood-fired and electric options
+            - listitem [ref=e40]: Custom sizing and site fit
+            - listitem [ref=e41]: Built for exterior exposure
+          - link "View details" [ref=e42] [cursor=pointer]:
+            - /url: /services/cedar-hot-tubs
+        - article [ref=e43]:
+          - img "Sleeping Barrels" [ref=e44]
+          - paragraph [ref=e45]: Stay-worthy
+          - heading "Sleeping Barrels" [level=3] [ref=e46]
+          - paragraph [ref=e47]: Sleeping barrels turn simple overnight accommodation into a dry, memorable cedar shelter. They are compact, character-rich, and designed to sit naturally in forest, coastal, and campground settings.
+          - list [ref=e48]:
+            - listitem [ref=e49]: Weather-conscious cedar construction
+            - listitem [ref=e50]: Layouts for guest stays and retreat settings
+            - listitem [ref=e51]: Memorable lodging for hospitality projects
+          - link "View details" [ref=e52] [cursor=pointer]:
+            - /url: /services/sleeping-barrels
+        - article [ref=e53]:
+          - img "Cedar Yurts" [ref=e54]
+          - paragraph [ref=e55]: Custom structures
+          - heading "Cedar Yurts" [level=3] [ref=e56]
+          - paragraph [ref=e57]: Cedar yurts bring One of a Kind’s love of round construction into larger spaces. Vertical logs create a circle-house feel, while horizontal log layouts support more conventional cabin forms.
+          - list [ref=e58]:
+            - listitem [ref=e59]: Round cedar structure planning
+            - listitem [ref=e60]: Cabin, studio, retreat, and campground uses
+            - listitem [ref=e61]: Vertical or horizontal log concepts
+          - link "View details" [ref=e62] [cursor=pointer]:
+            - /url: /services/cedar-yurts
+        - article [ref=e63]:
+          - img "Custom Woodcraft" [ref=e64]
+          - paragraph [ref=e65]: One-off work
+          - heading "Custom Woodcraft" [level=3] [ref=e66]
+          - paragraph [ref=e67]: "Beyond wellness products, One of a Kind takes on unusual woodcraft projects that benefit from decades of shop experience: antique reproductions, institutional furniture, custom doors, wine cellars, and whatever challenge is worth building properly."
+          - list [ref=e68]:
+            - listitem [ref=e69]: Historical restorations and reproductions
+            - listitem [ref=e70]: Custom furniture and carved details
+            - listitem [ref=e71]: Commercial and residential woodwork
+          - link "View details" [ref=e72] [cursor=pointer]:
+            - /url: /services/custom-woodcraft
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: Get a free quote
+        - heading "Ready to make it one of a kind?" [level=2] [ref=e78]
+        - paragraph [ref=e79]: Tell us about the sauna, tub, sleeping barrel, yurt, or custom woodcraft idea you want to build.
+      - generic [ref=e80]:
+        - link "Request a Quote" [ref=e81] [cursor=pointer]:
+          - /url: /contact
+        - link "250-415-9628" [ref=e82] [cursor=pointer]:
+          - /url: tel:+12504159628
+  - contentinfo [ref=e83]:
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - heading "Workshop" [level=2] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - 'link "Phone: 250-415-9628" [ref=e90] [cursor=pointer]':
+                - /url: tel:+12504159628
+            - listitem [ref=e91]:
+              - 'link "Email: info@oneofakindcw.com" [ref=e92] [cursor=pointer]':
+                - /url: mailto:info@oneofakindcw.com
+            - listitem [ref=e93]: 1401 Springhill Rd, Parksville, BC
+        - generic [ref=e94]:
+          - heading "Built For" [level=2] [ref=e95]
+          - list [ref=e96]:
+            - listitem [ref=e97]: Vancouver Island
+            - listitem [ref=e98]: British Columbia
+            - listitem [ref=e99]: Canada
+            - listitem [ref=e100]: United States
+            - listitem [ref=e101]: Worldwide shipping
+        - generic [ref=e102]:
+          - heading "Quick Links" [level=2] [ref=e103]
+          - list [ref=e104]:
+            - listitem [ref=e105]:
+              - link "About" [ref=e106] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e107]:
+              - link "Products" [ref=e108] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e109]:
+              - link "Gallery" [ref=e110] [cursor=pointer]:
+                - /url: /gallery
+            - listitem [ref=e111]:
+              - link "Contact" [ref=e112] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e113]:
+              - link "Privacy" [ref=e114] [cursor=pointer]:
+                - /url: /privacy
+      - generic [ref=e115]:
+        - paragraph [ref=e116]: © 2026 One of a Kind Creative Woodworking
+        - paragraph [ref=e117]: Custom cedar wellness structures and one-of-a-kind woodcraft from a Vancouver Island workshop.

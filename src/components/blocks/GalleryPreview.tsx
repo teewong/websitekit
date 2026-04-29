@@ -8,8 +8,8 @@ export default function GalleryPreview() {
     <Section>
       <SectionTitle
         eyebrow="Gallery"
-        title="A Clean, Reusable Gallery Pattern"
-        intro="The starter includes a simple gallery layout that works for arborists, electricians, painters, and similar local services."
+        title="Recent cedar builds"
+        intro="A closer look at sauna interiors, installations, hot tubs, sleeping barrels, and workshop details."
       />
       <div className="gallery-grid">
         {galleryItems.slice(0, 4).map((item, index) => (

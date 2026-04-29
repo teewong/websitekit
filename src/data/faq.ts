@@ -5,18 +5,18 @@ export type FaqItem = {
 
 export const faqItems: FaqItem[] = [
   {
-    question: 'Do you offer free estimates?',
+    question: 'Do you offer free quotes?',
     answer:
-      'Yes. We offer free estimates for most local residential projects and are happy to talk through the work before booking.',
+      'Yes. Share the product, location, site access, and any custom details you have in mind, and we will help define the next step.',
   },
   {
-    question: 'What areas do you serve?',
+    question: 'Where do you ship?',
     answer:
-      'We serve Qualicum Beach, Parksville, Errington, Coombs, Nanoose Bay, Nanaimo, and nearby communities.',
+      'One of a Kind builds in Parksville on Vancouver Island and can ship custom cedar products across Canada, the United States, and worldwide.',
   },
   {
-    question: 'Do you clean up after the work is done?',
+    question: 'Can the build be customized?',
     answer:
-      'Yes. Cleanup is part of the service so the site feels orderly and usable when the work is complete.',
+      'Yes. Sizes, seating layouts, heat source, acrylic bubble options, smoked privacy finishes, graphics, and special details can be discussed during quoting.',
   },
 ]

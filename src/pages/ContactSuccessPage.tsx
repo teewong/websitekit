@@ -29,8 +29,7 @@ export default function ContactSuccessPage() {
             <p className="eyebrow">Thanks</p>
             <h1 className="success-panel__title">Your message has been sent</h1>
             <p className="success-panel__intro">
-              We have your request and will follow up as soon as we can. This page is designed to give clients a clear
-              end state instead of leaving them guessing whether the form worked.
+              We have your request and will follow up as soon as we can with a practical next step for your custom build.
             </p>
           </div>
 
@@ -39,16 +38,16 @@ export default function ContactSuccessPage() {
               <h2>What happens next</h2>
               <ol className="success-list">
                 <li>We review the message and contact details you submitted.</li>
-                <li>We follow up to clarify scope, timing, or property details if needed.</li>
-                <li>We provide the next practical step, usually a quote conversation or booking window.</li>
+                <li>We follow up to clarify product, size, site access, timing, or delivery details if needed.</li>
+                <li>We provide the next practical step, usually a quote conversation or shop schedule window.</li>
               </ol>
             </article>
 
             <article className="success-card">
               <h2>Need something faster?</h2>
               <p>
-                If the job feels urgent or time-sensitive, calling is usually the fastest path. You can also return to
-                the site and keep browsing the service pages.
+                If your timeline is urgent or you are coordinating a delivery window, calling the workshop is usually
+                the fastest path.
               </p>
               <div className="success-actions">
                 <a className="button" href={siteData.phoneHref}>
@@ -63,7 +62,7 @@ export default function ContactSuccessPage() {
 
           <div className="success-panel__footer">
             <p>
-              {siteData.businessName} serves {siteData.serviceAreas.slice(0, 4).join(', ')} and nearby areas.
+              {siteData.businessName} builds in Parksville and ships across Canada, the United States, and beyond.
             </p>
           </div>
         </div>

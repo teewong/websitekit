@@ -9,14 +9,14 @@ export default function GalleryPage() {
     <>
       <Seo
         title={`Gallery | ${siteData.businessName}`}
-        description={`See recent project examples from ${siteData.businessName}.`}
+        description={`See cedar sauna, hot tub, sleeping barrel, and workshop examples from ${siteData.businessName}.`}
         path="/gallery"
       />
       <Section>
         <SectionTitle
           eyebrow="Gallery"
-          title="Recent Work"
-          intro="A simple gallery page is useful for any visual local business niche and easy to repurpose."
+          title="Cedar, curves, heat, and weather."
+          intro="A tighter look at the materials, interiors, installs, and workshop details behind One of a Kind builds."
         />
         <div className="gallery-grid gallery-grid--full">
           {galleryItems.map((item, index) => (

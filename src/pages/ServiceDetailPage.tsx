@@ -29,9 +29,12 @@ export default function ServiceDetailPage() {
         path={`/services/${service.slug}`}
       />
       <Section>
-        <SectionTitle eyebrow="Service detail" title={service.title} intro={service.shortDescription} />
+        <SectionTitle eyebrow={service.eyebrow} title={service.title} intro={service.shortDescription} />
         <div className="content-grid">
           <div className="prose">
+            <figure className="feature-image">
+              <img src={service.image} alt={service.title} />
+            </figure>
             <p>{service.description}</p>
             <p>{service.processNote}</p>
           </div>

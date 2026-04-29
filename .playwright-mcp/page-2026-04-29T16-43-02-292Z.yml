@@ -1,0 +1,172 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "One of a Kind Creative Woodcrafting" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "One of a Kind Creative Woodcrafting" [ref=e7]
+      - navigation "Primary" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about
+        - link "Products" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Gallery" [ref=e12] [cursor=pointer]:
+          - /url: /gallery
+        - link "Contact" [ref=e13] [cursor=pointer]:
+          - /url: /contact
+      - link "Request a Quote" [ref=e14] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - img [ref=e18]
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: Built in Parksville. Shipped worldwide.
+          - heading "Custom cedar spaces with a point of view." [level=1] [ref=e22]
+          - paragraph [ref=e23]: Barrel saunas, cedar hot tubs, sleeping barrels, yurts, and one-of-a-kind woodcraft made by hand in Parksville for people who want more than a kit.
+          - generic [ref=e24]:
+            - link "Start a Custom Build" [ref=e25] [cursor=pointer]:
+              - /url: /contact
+            - link "250-415-9628" [ref=e26] [cursor=pointer]:
+              - /url: tel:+12504159628
+        - generic [ref=e27]:
+          - img "Scenic View barrel sauna installed near the coast" [ref=e28]
+          - generic [ref=e29]:
+            - text: Featured build
+            - strong [ref=e30]: Scenic View barrel sauna
+            - paragraph [ref=e31]: A full acrylic bubble back wall creates a panoramic view without the kit-sauna compromise.
+      - generic [ref=e33]:
+        - article [ref=e34]:
+          - strong [ref=e35]: 50+
+          - generic [ref=e36]: years of woodworking and construction experience
+        - article [ref=e37]:
+          - strong [ref=e38]: 100%
+          - generic [ref=e39]: Canadian owned and built on Vancouver Island
+        - article [ref=e40]:
+          - strong [ref=e41]: Global
+          - generic [ref=e42]: shipping for homes, resorts, and retreat properties
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - paragraph [ref=e46]: Why One of a Kind
+          - heading "Built like West Coast weather is part of the brief." [level=2] [ref=e47]
+        - generic [ref=e48]:
+          - paragraph [ref=e49]: "Vancouver Island has plenty of sauna companies with clean model pages. One of a Kind has something harder to copy: deep woodworking experience, flexible custom capability, and a portfolio that reaches from wellness products to unusual cedar structures."
+          - list [ref=e50]:
+            - listitem [ref=e51]: Custom work beyond standard sauna models
+            - listitem [ref=e52]: Scenic acrylic bubble view wall
+            - listitem [ref=e53]: Barrel saunas, tubs, yurts, sleeping barrels, and one-off woodcraft
+            - listitem [ref=e54]: Personalization, graphics, and unusual requests welcome
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - paragraph [ref=e58]: Products
+          - heading "Signature builds for heat, rest, and retreat." [level=2] [ref=e59]
+        - generic [ref=e60]:
+          - link "Scenic View Barrel Saunas Signature product Scenic View Barrel Saunas Custom cedar barrel saunas with the signature full acrylic bubble view wall." [ref=e61] [cursor=pointer]:
+            - /url: /services/barrel-saunas
+            - img "Scenic View Barrel Saunas" [ref=e62]
+            - generic [ref=e63]:
+              - text: Signature product
+              - heading "Scenic View Barrel Saunas" [level=3] [ref=e64]
+              - paragraph [ref=e65]: Custom cedar barrel saunas with the signature full acrylic bubble view wall.
+          - link "Cedar Hot Tubs Cedar soaking Cedar Hot Tubs Round cedar hot tubs built for natural warmth, outdoor living, and year-round use." [ref=e66] [cursor=pointer]:
+            - /url: /services/cedar-hot-tubs
+            - img "Cedar Hot Tubs" [ref=e67]
+            - generic [ref=e68]:
+              - text: Cedar soaking
+              - heading "Cedar Hot Tubs" [level=3] [ref=e69]
+              - paragraph [ref=e70]: Round cedar hot tubs built for natural warmth, outdoor living, and year-round use.
+          - link "Sleeping Barrels Stay-worthy Sleeping Barrels Cedar sleeping barrels for resorts, campgrounds, Airbnbs, retreats, and guest stays." [ref=e71] [cursor=pointer]:
+            - /url: /services/sleeping-barrels
+            - img "Sleeping Barrels" [ref=e72]
+            - generic [ref=e73]:
+              - text: Stay-worthy
+              - heading "Sleeping Barrels" [level=3] [ref=e74]
+              - paragraph [ref=e75]: Cedar sleeping barrels for resorts, campgrounds, Airbnbs, retreats, and guest stays.
+        - link "Explore all products" [ref=e77] [cursor=pointer]:
+          - /url: /services
+      - generic [ref=e79]:
+        - img "Warm cedar barrel sauna interior" [ref=e80]
+        - generic [ref=e81]:
+          - paragraph [ref=e82]: Scenic View sauna
+          - heading "The detail competitors do not have." [level=2] [ref=e83]
+          - paragraph [ref=e84]: The full back wall can be a large durable acrylic bubble. It is UV-protected, does not give off gas, and can be smoked for extra privacy. That turns a barrel sauna into a place to watch weather, water, trees, and stars.
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - paragraph [ref=e88]: Process
+          - heading "Custom does not need to feel complicated." [level=2] [ref=e89]
+        - generic [ref=e90]:
+          - article [ref=e91]:
+            - generic [ref=e92]: "01"
+            - heading "Tell us the setting" [level=3] [ref=e93]
+            - paragraph [ref=e94]: Share the product you are considering, your location, site access, preferred heat source, and any design ideas.
+          - article [ref=e95]:
+            - generic [ref=e96]: "02"
+            - heading "Shape the build" [level=3] [ref=e97]
+            - paragraph [ref=e98]: We confirm size, materials, personalization, delivery needs, and practical details before the shop work begins.
+          - article [ref=e99]:
+            - generic [ref=e100]: "03"
+            - heading "Build, deliver, install" [level=3] [ref=e101]
+            - paragraph [ref=e102]: Your cedar structure is handcrafted in Parksville, prepared for delivery, and supported through installation.
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - paragraph [ref=e106]: Happy people
+          - heading "Used by homeowners, resorts, and hosts." [level=2] [ref=e107]
+        - generic [ref=e108]:
+          - article [ref=e109]:
+            - text: “
+            - paragraph [ref=e110]: “We picked up our barrel sauna and assembled it with the supplied instructions. It came together beautifully and is used almost daily.”
+            - strong [ref=e111]: Chris & Laura Degroot
+            - text: Homeowners
+          - article [ref=e112]:
+            - text: “
+            - paragraph [ref=e113]: “Our project required three pre-built barrel saunas delivered on site. The return was immediate and the saunas quickly paid for themselves.”
+            - strong [ref=e114]: J.J. Belanger
+            - text: Crystal Cove Beach Resort
+          - article [ref=e115]:
+            - text: “
+            - paragraph [ref=e116]: “We considered buying a kit online and are so glad we did not. Dave explained the quality, craftsmanship, and durability differences clearly.”
+            - strong [ref=e117]: Geoff Hunt & Michelle Lee
+            - text: Homeowners
+  - contentinfo [ref=e118]:
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - heading "Workshop" [level=2] [ref=e122]
+          - list [ref=e123]:
+            - listitem [ref=e124]:
+              - 'link "Phone: 250-415-9628" [ref=e125] [cursor=pointer]':
+                - /url: tel:+12504159628
+            - listitem [ref=e126]:
+              - 'link "Email: info@oneofakindcw.com" [ref=e127] [cursor=pointer]':
+                - /url: mailto:info@oneofakindcw.com
+            - listitem [ref=e128]: 1401 Springhill Rd, Parksville, BC
+        - generic [ref=e129]:
+          - heading "Built For" [level=2] [ref=e130]
+          - list [ref=e131]:
+            - listitem [ref=e132]: Vancouver Island
+            - listitem [ref=e133]: British Columbia
+            - listitem [ref=e134]: Canada
+            - listitem [ref=e135]: United States
+            - listitem [ref=e136]: Worldwide shipping
+        - generic [ref=e137]:
+          - heading "Quick Links" [level=2] [ref=e138]
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - link "About" [ref=e141] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e142]:
+              - link "Products" [ref=e143] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e144]:
+              - link "Gallery" [ref=e145] [cursor=pointer]:
+                - /url: /gallery
+            - listitem [ref=e146]:
+              - link "Contact" [ref=e147] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e148]:
+              - link "Privacy" [ref=e149] [cursor=pointer]:
+                - /url: /privacy
+      - generic [ref=e150]:
+        - paragraph [ref=e151]: © 2026 One of a Kind Creative Woodworking
+        - paragraph [ref=e152]: Custom cedar wellness structures and one-of-a-kind woodcraft from a Vancouver Island workshop.

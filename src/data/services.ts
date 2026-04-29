@@ -5,142 +5,94 @@ export type ServiceItem = {
   description: string
   bullets: string[]
   processNote: string
+  image: string
+  eyebrow: string
 }
 
 export const services: ServiceItem[] = [
   {
-    slug: 'custom-home-wiring',
-    title: 'Custom Home Wiring',
-    shortDescription: 'Complete electrical systems designed and installed for new construction and custom builds.',
+    slug: 'barrel-saunas',
+    title: 'Scenic View Barrel Saunas',
+    shortDescription: 'Custom cedar barrel saunas with the signature full acrylic bubble view wall.',
     description:
-      'From service planning to final device installation, custom home wiring is handled with a focus on code compliance, layout clarity, and long-term reliability.',
+      'The Scenic View barrel sauna is built for the West Coast lifestyle: warm cedar, efficient rounded form, and a durable acrylic bubble back wall that opens the sauna to forest, ocean, mountain, or backyard views.',
     bullets: [
-      'Service layout planning',
-      'Lighting and receptacle circuits',
-      'Coordination with builders and homeowners',
-      'Code-compliant rough-in and finish work',
+      'Wood-fired or electric heat options',
+      'Clear or smoked acrylic view wall',
+      'Custom lengths, seating layouts, and change rooms',
+      'Personalized graphics and exterior details',
     ],
     processNote:
-      'Projects stay organized with clear communication from rough-in through final walkthrough.',
+      'Every sauna is scoped around the site, view, access, heat preference, and the way you want to use it.',
+    image: '/images/ooak/scenic-sauna.jpg',
+    eyebrow: 'Signature product',
   },
   {
-    slug: 'renovations-upgrades',
-    title: 'Renovations & Upgrades',
-    shortDescription: 'Expert electrical work for kitchen remodels, home additions, and full renovations.',
+    slug: 'cedar-hot-tubs',
+    title: 'Cedar Hot Tubs',
+    shortDescription: 'Round cedar hot tubs built for natural warmth, outdoor living, and year-round use.',
     description:
-      'Renovation work demands practical planning, respect for occupied homes, and attention to detail so the electrical scope supports the finished design instead of slowing it down.',
+      'A cedar hot tub brings the ritual back to soaking. One of a Kind builds tubs with natural cedar presence, practical heating choices, and a finished look that belongs beside cabins, retreats, decks, and ocean-view homes.',
     bullets: [
-      'Kitchen and bath remodel wiring',
-      'Additions and reconfigurations',
-      'Device relocation and circuit extensions',
-      'Code updates during renovation',
+      'Wood-fired and electric options',
+      'Custom sizing and site fit',
+      'Built for exterior exposure',
+      'Made from Vancouver Island craft experience',
     ],
     processNote:
-      'You get direct coordination, tidy work areas, and realistic scheduling.',
+      'Sizing, heat source, and installation planning are discussed up front so the finished tub works with the property.',
+    image: '/images/ooak/hot-tub.jpg',
+    eyebrow: 'Cedar soaking',
   },
   {
-    slug: 'ev-charger-installation',
-    title: 'EV Charger Installation',
-    shortDescription: 'Professional installation of electric vehicle charging stations with proper load assessment.',
+    slug: 'sleeping-barrels',
+    title: 'Sleeping Barrels',
+    shortDescription: 'Cedar sleeping barrels for resorts, campgrounds, Airbnbs, retreats, and guest stays.',
     description:
-      'Home EV charging needs more than mounting hardware. Load capacity, panel condition, and device placement all matter for safe daily use.',
+      'Sleeping barrels turn simple overnight accommodation into a dry, memorable cedar shelter. They are compact, character-rich, and designed to sit naturally in forest, coastal, and campground settings.',
     bullets: [
-      'Load calculations',
-      'Dedicated circuit installation',
-      'Interior or exterior charger locations',
-      'Permit-ready professional installation',
+      'Weather-conscious cedar construction',
+      'Layouts for guest stays and retreat settings',
+      'Memorable lodging for hospitality projects',
+      'Custom exterior treatments and details',
     ],
     processNote:
-      'The goal is reliable charging without overloading the rest of the home.',
+      'Hospitality projects can be planned around guest turnover, site access, and repeatable installation.',
+    image: '/images/ooak/sleeping-barrel.jpg',
+    eyebrow: 'Stay-worthy',
   },
   {
-    slug: 'panel-upgrades',
-    title: 'Panel Upgrades',
-    shortDescription: 'Modern electrical panel installations to meet current safety standards and power demands.',
+    slug: 'cedar-yurts',
+    title: 'Cedar Yurts',
+    shortDescription: 'Round cedar structures for cabins, studios, campground units, and special-use spaces.',
     description:
-      'Older electrical panels can become a bottleneck when homes add heat pumps, EV chargers, workshops, or major renovations. Panel upgrades create safer capacity for modern usage.',
+      'Cedar yurts bring One of a Kind’s love of round construction into larger spaces. Vertical logs create a circle-house feel, while horizontal log layouts support more conventional cabin forms.',
     bullets: [
-      'Main panel replacements',
-      'Capacity upgrades',
-      'Breaker organization and labeling',
-      'Cleaner support for future additions',
+      'Round cedar structure planning',
+      'Cabin, studio, retreat, and campground uses',
+      'Vertical or horizontal log concepts',
+      'Custom detailing from an experienced shop',
     ],
     processNote:
-      'Panel work is scoped clearly up front so homeowners know what is changing and why.',
+      'Yurt and cabin concepts start with intended use, size, setting, and the level of finish required.',
+    image: '/images/ooak/team.jpg',
+    eyebrow: 'Custom structures',
   },
   {
-    slug: 'lighting-design-installation',
-    title: 'Lighting Design & Installation',
-    shortDescription: "Thoughtful lighting solutions to enhance your home's functionality and ambiance.",
+    slug: 'custom-woodcraft',
+    title: 'Custom Woodcraft',
+    shortDescription: 'Specialty woodworking, furniture, restorations, doors, wine cellars, and unusual builds.',
     description:
-      'Good lighting improves how a home works and how it feels. Fixture placement, switching logic, and dimming all get planned to match the space.',
+      'Beyond wellness products, One of a Kind takes on unusual woodcraft projects that benefit from decades of shop experience: antique reproductions, institutional furniture, custom doors, wine cellars, and whatever challenge is worth building properly.',
     bullets: [
-      'Interior and exterior lighting plans',
-      'Fixture replacement and new installs',
-      'Dimmers, controls, and accent lighting',
-      'Practical recommendations for daily use',
+      'Historical restorations and reproductions',
+      'Custom furniture and carved details',
+      'Commercial and residential woodwork',
+      'One-off builds with practical durability',
     ],
     processNote:
-      'Lighting work balances function, comfort, and clean visual results.',
-  },
-  {
-    slug: 'solar-power',
-    title: 'Solar Power',
-    shortDescription: 'Solar panel and inverter systems, off-grid support, and rebate-aware planning.',
-    description:
-      'Solar projects are handled with attention to electrical integration, equipment compatibility, and system performance so the installation serves the home properly long term.',
-    bullets: [
-      'Solar panel and inverter systems',
-      'Grid-tied and remote off-grid support',
-      'Battery integration planning',
-      'Rebate-aware electrical scope',
-    ],
-    processNote:
-      'Green energy work is approached as a full system, not just a product install.',
-  },
-  {
-    slug: 'battery-wall-packs',
-    title: 'Battery Wall Packs',
-    shortDescription: 'Install a backup battery system and keep essential circuits available during outages.',
-    description:
-      'Battery storage can keep core appliances, lighting, and critical systems operating when the grid is down, especially when combined with solar or transfer equipment.',
-    bullets: [
-      'Essential-load planning',
-      'Battery storage installation',
-      'Backup power integration',
-      'Future-ready system layout',
-    ],
-    processNote:
-      'Battery systems are designed around what the household actually needs during an outage.',
-  },
-  {
-    slug: 'generator-backup-system',
-    title: 'Generator Backup System',
-    shortDescription: 'Generator systems with transfer switching and essential load support for emergencies.',
-    description:
-      'Backup generator systems give homeowners a practical emergency plan for outages, storms, and service interruptions without unsafe temporary setups.',
-    bullets: [
-      'Generator connection systems',
-      'Automatic or manual transfer options',
-      'Essential load panels',
-      'Dependable emergency-ready operation',
-    ],
-    processNote:
-      'The installation is built to be easy to use when conditions are stressful.',
-  },
-  {
-    slug: 'electromagnetic-field-detection',
-    title: 'Electromagnetic Field (EMF) Detection',
-    shortDescription: 'Identification of high EMF sources and mitigation planning inside the home.',
-    description:
-      'If you are concerned about elevated EMF exposure in sleeping areas or living spaces, the system can be assessed and potential sources can be identified for mitigation planning.',
-    bullets: [
-      'In-home EMF source identification',
-      'Sleeping and living area review',
-      'Mitigation recommendations',
-      'Practical discussion of electrical causes',
-    ],
-    processNote:
-      'This service is approached carefully and explained in plain language so you understand the findings.',
+      'Custom work begins with the practical question: what should this piece do, where will it live, and how should it age?',
+    image: '/images/ooak/hero-workshop.jpg',
+    eyebrow: 'One-off work',
   },
 ]

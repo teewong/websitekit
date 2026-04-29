@@ -6,17 +6,21 @@ import { siteData } from '../data/site'
 export default function PrivacyPage() {
   return (
     <>
-      <Seo title={`Privacy | ${siteData.businessName}`} description="Basic privacy page placeholder." path="/privacy" />
+      <Seo title={`Privacy | ${siteData.businessName}`} description={`Privacy information for ${siteData.businessName}.`} path="/privacy" />
       <Section>
         <SectionTitle
           eyebrow="Privacy"
-          title="Privacy Policy Placeholder"
-          intro="Replace this draft with the final policy used for Constant Electric form submissions and client communications."
+          title="Privacy Policy"
+          intro="How contact form and project inquiry information is handled."
         />
         <div className="prose">
           <p>
-            This page exists so the site includes a proper location for privacy disclosures covering contact forms,
-            email communication, and any analytics or hosting services used in deployment.
+            Information submitted through this website is used to respond to project inquiries, prepare quotes, and
+            communicate about custom cedar builds. Personal details are not sold or shared for unrelated marketing.
+          </p>
+          <p>
+            Hosting, analytics, email, or form-processing providers may process information as needed to operate the
+            website and respond to requests.
           </p>
         </div>
       </Section>

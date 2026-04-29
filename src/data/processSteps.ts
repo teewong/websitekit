@@ -5,15 +5,15 @@ export type ProcessStep = {
 
 export const processSteps: ProcessStep[] = [
   {
-    title: '1. Call or Request a Quote',
-    body: 'Reach out by phone, text, or email. You will get a prompt response and a clear next step.',
+    title: 'Tell us the setting',
+    body: 'Share the product you are considering, your location, site access, preferred heat source, and any design ideas.',
   },
   {
-    title: '2. Clear Estimate & Scheduling',
-    body: "You will know the expected cost before work begins, and the job gets booked at a time that works.",
+    title: 'Shape the build',
+    body: 'We confirm size, materials, personalization, delivery needs, and practical details before the shop work begins.',
   },
   {
-    title: '3. Professional Work & Clean Finish',
-    body: "The work is completed carefully, the site is kept tidy, and the finished result is built to last.",
+    title: 'Build, deliver, install',
+    body: 'Your cedar structure is handcrafted in Parksville, prepared for delivery, and supported through installation.',
   },
 ]

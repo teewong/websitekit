@@ -1,0 +1,92 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "One of a Kind Creative Woodcrafting" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "One of a Kind Creative Woodcrafting" [ref=e7]
+      - navigation "Primary" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about
+        - link "Products" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Gallery" [ref=e12] [cursor=pointer]:
+          - /url: /gallery
+        - link "Contact" [ref=e13] [cursor=pointer]:
+          - /url: /contact
+      - link "Request a Quote" [ref=e14] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e15]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: About
+        - heading "A workshop built around round things, durable things, and unusual ideas." [level=2] [ref=e20]
+        - paragraph [ref=e21]: Dave Byers has spent nearly 50 years building residential, commercial, and custom woodworking projects. One of a Kind is where that experience meets cedar wellness structures.
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - paragraph [ref=e24]: One of a Kind Creative Woodcrafting is based in Parksville on Vancouver Island. The shop handcrafts barrel saunas, cedar hot tubs, sleeping barrels, cedar yurts, insulated log concepts, and custom woodwork that does not fit neatly in a catalogue.
+          - paragraph [ref=e25]: "Dave moved west with Shirley after losing a large New Brunswick woodworking shop to extreme winter snow. The new workshop carries forward decades of building knowledge with a clear rule: do not offer something that will not stand up to real weather."
+          - paragraph [ref=e26]: That is why the best work here feels both playful and serious. A surfer graphic on a barrel sauna, a smoked acrylic scenic-view wall, a cedar sleeping pod for a retreat property, or a one-off furniture piece all still need to be built with the same practical attention.
+        - generic [ref=e27]:
+          - figure [ref=e28]:
+            - img "Dave Byers of One of a Kind Creative Woodcrafting" [ref=e29]
+          - complementary [ref=e30]:
+            - heading "What clients value" [level=3] [ref=e31]
+            - list [ref=e32]:
+              - listitem [ref=e33]: Real custom capability from a working cedar shop
+              - listitem [ref=e34]: Nearly 50 years of building experience
+              - listitem [ref=e35]: Personalization that makes each barrel identifiable
+              - listitem [ref=e36]: Worldwide shipping from Vancouver Island
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Get a free quote
+        - heading "Ready to make it one of a kind?" [level=2] [ref=e42]
+        - paragraph [ref=e43]: Tell us about the sauna, tub, sleeping barrel, yurt, or custom woodcraft idea you want to build.
+      - generic [ref=e44]:
+        - link "Request a Quote" [ref=e45] [cursor=pointer]:
+          - /url: /contact
+        - link "250-415-9628" [ref=e46] [cursor=pointer]:
+          - /url: tel:+12504159628
+  - contentinfo [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - heading "Workshop" [level=2] [ref=e51]
+          - list [ref=e52]:
+            - listitem [ref=e53]:
+              - 'link "Phone: 250-415-9628" [ref=e54] [cursor=pointer]':
+                - /url: tel:+12504159628
+            - listitem [ref=e55]:
+              - 'link "Email: info@oneofakindcw.com" [ref=e56] [cursor=pointer]':
+                - /url: mailto:info@oneofakindcw.com
+            - listitem [ref=e57]: 1401 Springhill Rd, Parksville, BC
+        - generic [ref=e58]:
+          - heading "Built For" [level=2] [ref=e59]
+          - list [ref=e60]:
+            - listitem [ref=e61]: Vancouver Island
+            - listitem [ref=e62]: British Columbia
+            - listitem [ref=e63]: Canada
+            - listitem [ref=e64]: United States
+            - listitem [ref=e65]: Worldwide shipping
+        - generic [ref=e66]:
+          - heading "Quick Links" [level=2] [ref=e67]
+          - list [ref=e68]:
+            - listitem [ref=e69]:
+              - link "About" [ref=e70] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e71]:
+              - link "Products" [ref=e72] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e73]:
+              - link "Gallery" [ref=e74] [cursor=pointer]:
+                - /url: /gallery
+            - listitem [ref=e75]:
+              - link "Contact" [ref=e76] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e77]:
+              - link "Privacy" [ref=e78] [cursor=pointer]:
+                - /url: /privacy
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: © 2026 One of a Kind Creative Woodworking
+        - paragraph [ref=e81]: Custom cedar wellness structures and one-of-a-kind woodcraft from a Vancouver Island workshop.

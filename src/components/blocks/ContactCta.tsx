@@ -6,10 +6,10 @@ export default function ContactCta() {
     <Section tinted compact>
       <div className="cta-panel">
         <div>
-          <p className="eyebrow">Get in Touch</p>
-          <h2>Ready to discuss your project?</h2>
+          <p className="eyebrow">Get a free quote</p>
+          <h2>Ready to make it one of a kind?</h2>
           <p>
-            Reach out for a professional consultation, a straightforward quote, and clear advice on the next step.
+            Tell us about the sauna, tub, sleeping barrel, yurt, or custom woodcraft idea you want to build.
           </p>
         </div>
         <div className="cta-panel__actions">

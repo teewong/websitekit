@@ -7,17 +7,15 @@ export default function ServicesGrid() {
   return (
     <Section>
       <SectionTitle
-        eyebrow="Services"
-        title="Professional fruit tree pruning services"
-        intro="Specialized care for apple, pear, cherry, plum, and peach trees. Every cut matters."
+        eyebrow="Products"
+        title="Handcrafted cedar products"
+        intro="Barrel saunas, cedar hot tubs, sleeping barrels, yurts, and specialty woodcraft built around your setting."
         center
       />
       <div className="card-grid">
-        {services.slice(0, 4).map((service, index) => (
+        {services.slice(0, 4).map((service) => (
           <article key={service.slug} className="card">
-            <div className="service-card__icon" aria-hidden="true">
-              {index === 0 ? '✂' : index === 1 ? '❋' : index === 2 ? '□' : '◉'}
-            </div>
+            <img className="service-card__image" src={service.image} alt={service.title} />
             <h3>{service.title}</h3>
             <p>{service.shortDescription}</p>
             <Link className="text-link" to={`/services/${service.slug}`}>

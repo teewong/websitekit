@@ -7,7 +7,7 @@ export default function SiteFooter() {
       <div className="site-footer__inner">
         <div className="site-footer__grid">
           <div>
-            <h2>Contact Information</h2>
+            <h2>Workshop</h2>
             <ul className="plain-list site-footer__list">
               <li>
                 <a href={siteData.phoneHref}>Phone: {siteData.phoneDisplay}</a>
@@ -15,10 +15,11 @@ export default function SiteFooter() {
               <li>
                 <a href={siteData.emailHref}>Email: {siteData.email}</a>
               </li>
+              <li>1401 Springhill Rd, Parksville, BC</li>
             </ul>
           </div>
           <div>
-            <h2>Service Area</h2>
+            <h2>Built For</h2>
             <ul className="plain-list site-footer__list">
               {siteData.serviceAreas.map((area) => (
                 <li key={area}>{area}</li>
@@ -32,7 +33,10 @@ export default function SiteFooter() {
                 <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <NavLink to="/services">Services</NavLink>
+                <NavLink to="/services">Products</NavLink>
+              </li>
+              <li>
+                <NavLink to="/gallery">Gallery</NavLink>
               </li>
               <li>
                 <NavLink to="/contact">Contact</NavLink>
@@ -45,8 +49,7 @@ export default function SiteFooter() {
         </div>
         <div className="site-footer__bottom">
           <p>&copy; 2026 {siteData.legalName}</p>
-          <p>Dan Valliquette, Owner/Operator · Licensed &amp; Insured</p>
-          <p>Business License: LIC-00215142</p>
+          <p>{siteData.footerBlurb}</p>
         </div>
       </div>
     </footer>

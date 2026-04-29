@@ -4,7 +4,7 @@ export type TrustPoint = {
 }
 
 export const trustPoints: TrustPoint[] = [
-  { label: 'Years serving local homeowners', value: '12+' },
-  { label: 'Licensed and insured', value: 'Yes' },
-  { label: 'Service area', value: 'Central Vancouver Island' },
+  { label: 'Woodworking experience', value: '50+' },
+  { label: 'Workshop', value: 'Parksville, BC' },
+  { label: 'Shipping', value: 'Worldwide' },
 ]

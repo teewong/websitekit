@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import LocalBusinessJsonLd from '../components/seo/LocalBusinessJsonLd'
 import Seo from '../components/seo/Seo'
 import { processSteps } from '../data/processSteps'
@@ -5,118 +6,143 @@ import { services } from '../data/services'
 import { siteData } from '../data/site'
 import { testimonials } from '../data/testimonials'
 
-export default function HomePage() {
-  const promises = [
-    { title: 'Licensed & Insured', body: 'Full coverage for your peace of mind', icon: 'shield' },
-    { title: 'Clear Estimates', body: 'Before work begins', icon: 'estimate' },
-    { title: 'Respectful & Tidy', body: 'In your home', icon: 'home' },
-    { title: 'References Available', body: 'Happy customers throughout the island', icon: 'people' },
-  ] as const
+const stats = [
+  { value: '50+', label: 'years of woodworking and construction experience' },
+  { value: '100%', label: 'Canadian owned and built on Vancouver Island' },
+  { value: 'Global', label: 'shipping for homes, resorts, and retreat properties' },
+]
 
-  const rates = [
-    { title: 'Standard Rate', price: '$125/hr', note: 'Mon-Fri, 8am-6pm' },
-    { title: 'Overtime Rate', price: '$175/hr', note: 'Evenings & Weekends' },
-  ]
+const competitors = [
+  'Custom work beyond standard sauna models',
+  'Scenic acrylic bubble view wall',
+  'Barrel saunas, tubs, yurts, sleeping barrels, and one-off woodcraft',
+  'Personalization, graphics, and unusual requests welcome',
+]
+
+export default function HomePage() {
+  const featured = services.slice(0, 3)
 
   return (
     <>
       <Seo
-        title={`${siteData.businessName} | Electrician in ${siteData.location}`}
+        title={`${siteData.businessName} | Custom Cedar Saunas, Hot Tubs & Sleeping Barrels`}
         description={siteData.shortDescription}
         path="/"
       />
       <LocalBusinessJsonLd />
-      <section className="electric-home">
-        <section className="electric-hero">
-          <img className="electric-hero__image" src={siteData.heroImage} alt="" aria-hidden="true" />
-          <div className="electric-hero__overlay" />
-          <div className="electric-hero__content">
-            <h1>Expert Electrical Work for Homes That Deserve It Done Right.</h1>
-            <p className="electric-hero__intro">
-              Serving Mid-Vancouver Island homeowners with precision, transparency, and {siteData.yearsInBusiness}
-              years of experience.
+      <section className="home-page">
+        <section className="hero">
+          <img className="hero__image" src={siteData.heroImage} alt="" aria-hidden="true" />
+          <div className="hero__shade" />
+          <div className="hero__content">
+            <p className="eyebrow">{siteData.heroEyebrow}</p>
+            <h1>Custom cedar spaces with a point of view.</h1>
+            <p>
+              Barrel saunas, cedar hot tubs, sleeping barrels, yurts, and one-of-a-kind woodcraft made by hand in
+              Parksville for people who want more than a kit.
             </p>
-            <div className="hero-block__actions electric-hero__actions">
-              <a className="button" href={siteData.primaryCtaHref}>
-                {siteData.primaryCtaLabel}
-              </a>
-              <a className="button button--ghost electric-hero__secondary" href={siteData.secondaryCtaHref}>
-                {siteData.secondaryCtaLabel}
+            <div className="action-row">
+              <Link className="button" to="/contact">
+                Start a Custom Build
+              </Link>
+              <a className="button button--ghost" href={siteData.phoneHref}>
+                {siteData.phoneDisplay}
               </a>
             </div>
-            <div className="electric-hero__trust">
-              <span>Licensed</span>
-              <span>Insured</span>
-              <span>Experienced</span>
-              <span>Locally Owned</span>
+          </div>
+          <div className="hero__panel">
+            <img src="/images/ooak/scenic-sauna.jpg" alt="Scenic View barrel sauna installed near the coast" />
+            <div>
+              <span>Featured build</span>
+              <strong>Scenic View barrel sauna</strong>
+              <p>A full acrylic bubble back wall creates a panoramic view without the kit-sauna compromise.</p>
             </div>
           </div>
         </section>
 
-        <section className="electric-section electric-section--soft">
-          <div className="electric-section__inner electric-pillars">
-            {promises.map((item) => (
-              <article key={item.title} className="electric-card electric-card--center">
-                <div className={`electric-icon electric-icon--${item.icon}`} aria-hidden="true" />
-                <h2>{item.title}</h2>
-                <p>{item.body}</p>
+        <section className="band band--stats">
+          <div className="stat-grid">
+            {stats.map((stat) => (
+              <article key={stat.value}>
+                <strong>{stat.value}</strong>
+                <span>{stat.label}</span>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="electric-section">
-          <div className="electric-section__inner electric-stack">
-            <div className="electric-heading">
-              <h2>Professional Electrical Services</h2>
+        <section className="section">
+          <div className="section__inner split">
+            <div>
+              <p className="eyebrow">Why One of a Kind</p>
+              <h2>Built like West Coast weather is part of the brief.</h2>
             </div>
-            <div className="electric-service-list">
-              {services.map((service) => (
-                <article key={service.slug} className="electric-service-card">
-                  <h3>{service.title}</h3>
-                  <p>{service.shortDescription}</p>
-                </article>
+            <div className="prose prose--large">
+              <p>
+                Vancouver Island has plenty of sauna companies with clean model pages. One of a Kind has something
+                harder to copy: deep woodworking experience, flexible custom capability, and a portfolio that reaches
+                from wellness products to unusual cedar structures.
+              </p>
+              <ul className="check-list">
+                {competitors.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="section section--tinted">
+          <div className="section__inner">
+            <div className="section-heading">
+              <p className="eyebrow">Products</p>
+              <h2>Signature builds for heat, rest, and retreat.</h2>
+            </div>
+            <div className="product-grid">
+              {featured.map((service) => (
+                <Link key={service.slug} className="product-card" to={`/services/${service.slug}`}>
+                  <img src={service.image} alt={service.title} />
+                  <div>
+                    <span>{service.eyebrow}</span>
+                    <h3>{service.title}</h3>
+                    <p>{service.shortDescription}</p>
+                  </div>
+                </Link>
               ))}
             </div>
+            <div className="section-cta section-cta--center">
+              <Link className="text-link" to="/services">
+                Explore all products
+              </Link>
+            </div>
           </div>
         </section>
 
-        <section className="electric-section electric-section--soft">
-          <div className="electric-section__inner electric-stack">
-            <div className="electric-heading">
-              <h2>Dan Valliquette</h2>
+        <section className="section">
+          <div className="section__inner showcase">
+            <img src="/images/ooak/sauna-inside.jpg" alt="Warm cedar barrel sauna interior" />
+            <div className="showcase__copy">
+              <p className="eyebrow">Scenic View sauna</p>
+              <h2>The detail competitors do not have.</h2>
+              <p>
+                The full back wall can be a large durable acrylic bubble. It is UV-protected, does not give off gas, and
+                can be smoked for extra privacy. That turns a barrel sauna into a place to watch weather, water, trees,
+                and stars.
+              </p>
             </div>
-            <article className="electric-card electric-card--about">
-              <img className="electric-about__image" src={siteData.aboutImage} alt="Dan Valliquette with a Constant Electric truck" />
-              <div className="electric-about__copy">
-                <p>
-                  With over 25 years of experience serving Vancouver Island, I bring precision, reliability, and
-                  craftsmanship to every project.
-                </p>
-                <p>
-                  From custom home wiring to complex renovations, my work reflects a commitment to quality and
-                  attention to detail. Homeowners and contractors throughout Mid-Vancouver Island trust Constant
-                  Electric for electrical work that meets the highest standards.
-                </p>
-                <p>
-                  When you work with Constant Electric, you work directly with me. Clear communication, professional
-                  execution, and respect for your property are standard on every job.
-                </p>
-                <p className="electric-about__highlight">Your project deserves expert electrical work. I&apos;m here to deliver it.</p>
-              </div>
-            </article>
           </div>
         </section>
 
-        <section className="electric-section">
-          <div className="electric-section__inner electric-stack">
-            <div className="electric-heading">
-              <h2>What to Expect</h2>
+        <section className="section section--dark">
+          <div className="section__inner">
+            <div className="section-heading">
+              <p className="eyebrow">Process</p>
+              <h2>Custom does not need to feel complicated.</h2>
             </div>
-            <div className="electric-steps">
+            <div className="steps-grid">
               {processSteps.map((step, index) => (
-                <article key={step.title} className="electric-card electric-card--center electric-step-card">
-                  <div className="electric-step__badge">{index + 1}</div>
+                <article key={step.title} className="step-card">
+                  <span>{String(index + 1).padStart(2, '0')}</span>
                   <h3>{step.title}</h3>
                   <p>{step.body}</p>
                 </article>
@@ -125,70 +151,20 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="electric-section electric-section--rates">
-          <div className="electric-section__inner electric-stack">
-            <div className="electric-heading">
-              <h2>Transparent Rates</h2>
-              <p>You&apos;ll receive a clear estimate before work begins. No surprise charges.</p>
+        <section className="section">
+          <div className="section__inner">
+            <div className="section-heading">
+              <p className="eyebrow">Happy people</p>
+              <h2>Used by homeowners, resorts, and hosts.</h2>
             </div>
-            <div className="electric-rates">
-              {rates.map((rate) => (
-                <article key={rate.title} className="electric-card electric-rate-card">
-                  <h3>{rate.title}</h3>
-                  <strong>{rate.price}</strong>
-                  <p>{rate.note}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="electric-section">
-          <div className="electric-section__inner electric-stack">
-            <div className="electric-heading">
-              <h2>What Customers Say</h2>
-            </div>
-            <div className="electric-testimonials">
+            <div className="testimonial-grid">
               {testimonials.map((item) => (
-                <article key={item.name} className="electric-card electric-testimonial">
+                <article key={item.name} className="quote-card">
                   <p>&ldquo;{item.quote}&rdquo;</p>
-                  <strong>
-                    {item.name}, {item.location}
-                  </strong>
+                  <strong>{item.name}</strong>
+                  <span>{item.location}</span>
                 </article>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="electric-contact-band">
-          <div className="electric-section__inner electric-stack">
-            <div className="electric-heading electric-heading--light">
-              <h2>Get in Touch</h2>
-              <p>Ready to discuss your project? Reach out for a professional consultation.</p>
-            </div>
-            <div className="electric-contact-grid">
-              <article className="electric-card electric-card--dark">
-                <h3>Contact Information</h3>
-                <ul className="plain-list electric-contact-list">
-                  <li>
-                    <span>Phone</span>
-                    <a href={siteData.phoneHref}>{siteData.phoneDisplay}</a>
-                  </li>
-                  <li>
-                    <span>Email</span>
-                    <a href={siteData.emailHref}>{siteData.email}</a>
-                  </li>
-                </ul>
-              </article>
-              <article className="electric-card electric-card--dark">
-                <h3>Service Area</h3>
-                <ul className="plain-list electric-area-list">
-                  {siteData.serviceAreas.map((area) => (
-                    <li key={area}>{area}</li>
-                  ))}
-                </ul>
-              </article>
             </div>
           </div>
         </section>
